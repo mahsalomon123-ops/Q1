@@ -1,4 +1,5 @@
-[app]
+[app]android.ndk_path = /data/data/com.termux/files/home/Q1/android-ndk-r25b
+android.sdk_path = /data/data/com.termux/files/usr/opt/android-sdk
 title = Q1
 package.name = q1app
 package.domain = com.q1
