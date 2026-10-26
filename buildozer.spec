@@ -1,22 +1,59 @@
-[app]android.ndk_path = /data/data/com.termux/files/home/Q1/android-ndk-r25b
-android.sdk_path = /data/data/com.termux/files/usr/opt/android-sdk
+# Shipit OS generated buildozer.spec
+# Edit title / package.name / requirements as needed, then re-run shipit.
+
+[app]
+
+# (str) Title of your application
 title = Q1
-package.name = q1app
-package.domain = com.q1
+
+# (str) Package name
+package.name = q1
+
+# (str) Package domain (needed for android/ios packaging)
+package.domain = org.shipit
+
+# (str) Source code where the main.py live
 source.dir = .
-source.include_exts = py,png,jpg,kv,atlas,json,db
-version = 1.0
-requirements = python3,kivy,sqlite3
+
+# (list) Source files to include
+source.include_exts = py,png,jpg,jpeg,kv,atlas,ttf,txt,json,html,js,css,mp3,wav,ogg,gif,xml
+
+# (list) Source files to exclude
+source.exclude_exts = spec,pyc,pyo
+
+# (list) List of directory to exclude
+source.exclude_dirs = tests, bin, venv, .venv, .git, .github, dist, build, __pycache__
+
+# (str) Application versioning
+version = 0.1.0
+
+# (list) Application requirements (comma separated)
+requirements = python3,kivy
+
+# (str) Supported orientation
 orientation = portrait
-android.permissions = INTERNET
-android.api = 30
-android.minapi = 21
-android.archs = arm64-v8a, armeabi-v7a
+
+# (bool) Indicate if the application should be fullscreen or not
+fullscreen = 0
+
+#------------------------------------------------------------------------------
+# Android specific
+#------------------------------------------------------------------------------
+
+android.api = 33
+android.minapi = 24
+android.ndk = 25b
 android.accept_sdk_license = True
-android.ndk_path = /data/data/com.termux/files/home/Q1/android-ndk-r25b
-android.sdk_path = /data/data/com.termux/files/usr/opt/android-sdk
-android.skip_update = True
+android.archs = arm64-v8a, armeabi-v7a
+android.logcat_filters = *:S python:D
+
+# Detected entry: main.py
+
+#------------------------------------------------------------------------------
+# Buildozer settings
+#------------------------------------------------------------------------------
 
 [buildozer]
+
 log_level = 2
-warn_on_root = 1
+warn_on_root = 0
