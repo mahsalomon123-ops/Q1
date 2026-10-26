@@ -1,0 +1,46 @@
+{
+  "classes": [
+    {
+      "id": "3eme",
+      "nom": "Troisieme",
+      "matieres": [
+        {
+          "id": "maths",
+          "nom": "Mathematiques",
+          "cours": [
+            {
+              "id": "3m_maths_1",
+              "titre": "Theoreme de Pythagore",
+              "premium": false,
+              "contenu": "Dans un triangle rectangle, le carre de l'hypotenuse est egal a la somme des carres des deux autres cotes : a2 + b2 = c2."
+            },
+            {
+              "id": "3m_maths_2",
+              "titre": "Equations",
+              "premium": true,
+              "contenu": "Pour resoudre 2x + 3 = 11 : on isole x. 2x = 11 - 3. 2x = 8. x = 4."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terminale",
+      "nom": "Terminale",
+      "matieres": [
+        {
+          "id": "philo",
+          "nom": "Philosophie",
+          "cours": [
+            {
+              "id": "tle_philo_1",
+              "titre": "La liberte",
+              "premium": true,
+              "contenu": "La liberte est-elle une illusion ? Etude des concepts de Kant et Sartre."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
