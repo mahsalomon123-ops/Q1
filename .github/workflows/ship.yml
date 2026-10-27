@@ -30,6 +30,7 @@ jobs:
     - name: Build with Buildozer
       run: |
         export APP_ANDROID_ACCEPT_SDK_LICENSE=1
+        export TMPDIR=$RUNNER_TEMP
         buildozer android debug
 
     - name: Upload APK
